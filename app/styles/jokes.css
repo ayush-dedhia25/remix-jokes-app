@@ -38,6 +38,13 @@
   text-decoration-thickness: 1px;
 }
 
+.username {
+  margin-left: 5px;
+  color: burlywood;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .jokes-header .user-info {
   display: flex;
   gap: 1rem;
@@ -58,6 +65,13 @@
 
 .jokes-list {
   max-width: 12rem;
+}
+
+.jokes-list .random-joke-btn {
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .jokes-outlet {

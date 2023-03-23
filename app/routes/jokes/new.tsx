@@ -97,6 +97,7 @@ function NewJokeRoute() {
               type="text"
               defaultValue={actionData?.fields?.name}
               name="name"
+              style={{ marginTop: 10 }}
               aria-invalid={Boolean(actionData?.fieldErrors?.name) || undefined}
               aria-errormessage={
                 actionData?.fieldErrors?.name ? "name-error" : undefined
@@ -115,6 +116,7 @@ function NewJokeRoute() {
             <textarea
               defaultValue={actionData?.fields?.name}
               name="content"
+              style={{ marginTop: 10 }}
               aria-invalid={
                 Boolean(actionData?.fieldErrors?.content) || undefined
               }

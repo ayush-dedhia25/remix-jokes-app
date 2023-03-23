@@ -34,7 +34,9 @@ function JokesRoute() {
           </h1>
           {data.user ? (
             <div className="user-info">
-              <span>Hi {data.user.username}</span>
+              <span>
+                Hi <span className="username">{data.user.username}</span>
+              </span>
               <Form action="/logout" method="post">
                 <button type="submit" className="button">
                   Logout
@@ -49,7 +51,9 @@ function JokesRoute() {
       <main className="jokes-main">
         <div className="container">
           <div className="jokes-list">
-            <Link to=".">Get a random joke</Link>
+            <Link to="." className="random-joke-btn">
+              Get a Random Joke
+            </Link>
             <p>Here are a few more jokes to checkout:</p>
             <ul>
               {data.jokeListItems.map((joke) => (

@@ -31,10 +31,10 @@ model User {
 
 model Joke {
    id         String   @id @default(auto()) @map("_id") @db.ObjectId
-   name       String
-   content    String
+   name       String   @db.String
+   content    String   @db.String
    jokester   User?    @relation(fields: [jokesterId], references: [id], onDelete: Cascade)
-   jokesterId String?  @db.ObjectId
+   jokesterId String?  @map("jokester") @db.ObjectId
    createdAt  DateTime @default(now())
    updatedAt  DateTime @updatedAt
 }

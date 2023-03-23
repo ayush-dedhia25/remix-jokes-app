@@ -18,7 +18,7 @@ function JokesIndexRoute() {
 
   return (
     <div>
-      <p>Here's a random joke:</p>
+      <h3>Here's a random joke:</h3>
       <p>{randomJoke.content}</p>
       <Link to={randomJoke.id}>"{randomJoke.name}" Permalink</Link>
     </div>

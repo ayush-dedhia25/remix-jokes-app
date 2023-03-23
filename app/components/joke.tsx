@@ -12,9 +12,11 @@ function JokeDisplay({
 }) {
   return (
     <div>
-      <p>Here's your hilarious joke:</p>
+      <h3>Here's your hilarious joke:</h3>
       <p>{joke.content}</p>
-      <Link to=".">{joke.name} Permalink</Link>
+      <Link to="." style={{ marginBottom: "15px", display: "block" }}>
+        "{joke.name}" Permalink
+      </Link>
       {isOwner && (
         <Form method="post">
           <button
