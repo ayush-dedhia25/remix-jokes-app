@@ -9,5 +9,8 @@
       "Ssvq",
       "typecheck"
    ],
-   "editor.fontSize": 13.5
+   "editor.fontSize": 13,
+   "editor.fontFamily": "Liberation Mono",
+   "editor.fontLigatures": false,
+   "editor.lineHeight": 2
 }
